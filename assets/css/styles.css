@@ -9,10 +9,6 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.clear {
-    clear: both;
-}
-
 .text-white {
     color: #fff !important;
 }
@@ -21,8 +17,14 @@ html {
     text-align: center !important;
 }
 
-
 .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    margin-top: 15px;
+    margin-bottom: 16px;
+    text-align: center;
+    display: inline-block;    
     border: none;
 }
 
@@ -34,6 +36,12 @@ html {
 .row {
     margin-left: -8px;
     margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .col {
@@ -51,6 +59,18 @@ html {
 
 .col-3 {
     width: calc(100% / 3);
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.pull-right {
+    float: right !important;
 }
 
 /* 
@@ -170,7 +190,7 @@ html {
 }
 
 #content .content-section {
-    padding: 64px 0;
+    padding: 64px 0 112px;
     width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -249,7 +269,6 @@ html {
 
 .ticket-list {    
     margin-top: 32px; 
-    margin-bottom: 48px;   
 }
 
 .ticket-card .ticket-img {
@@ -295,22 +314,63 @@ html {
 }
 
 .contact-content {
-
+    margin-top: 48px;
 }
 
 .contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
 
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
 }
 
 .contact-input {
-
+    font-size: 15px;
 }
 
+.contact-input .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
 
+.map-section img {
+    width: 100%;
+}
 
 #footer {
-
+    background-color: #f1f1f1;
+    padding: 64px 16px;
+    text-align: center;
 }
+
+#footer .social {
+    font-size: 24px;
+}
+
+#footer .social a {
+    color: rgba(0, 0 ,0 ,0.6);
+    text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .social a:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0 ,0 ,0.6)
+}
+
+#footer .copyright a {
+    color: rgba(0, 0 ,0 ,0.6);
+}
+
 
 .modal {
     display: none;
