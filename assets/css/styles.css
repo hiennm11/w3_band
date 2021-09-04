@@ -70,6 +70,10 @@ html {
     margin-top: 16px !important;
 }
 
+.mt-32 {
+    margin-top: 32px !important;
+}
+
 .pull-right {
     float: right !important;
 }
@@ -118,7 +122,7 @@ html {
 
 #nav li a {
     text-decoration: none;
-    padding: 0 24px;
+    padding: 1px 24px;
     display: block;
 }
 
@@ -148,9 +152,9 @@ html {
     line-height: 38px;
 }
 
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
-    line-height: 46px;
     padding: 0 21px;
 }
 
@@ -159,8 +163,23 @@ html {
     cursor: pointer;
 }
 
+#header .mobile-menu-btn {
+    display: none;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover > i{
+    color: #000;
+}
+
+#header .mobile-menu-btn > i,
 #header .search-btn > i {
     color: #fff;
+    line-height: 46px;
+
 }
 
 #slider {
@@ -218,7 +237,7 @@ html {
 }
 
 #content .about-member {
-    padding: 32px 0;
+    padding: 16px 0 32px;
 }
 
 #content .member-name {
@@ -268,7 +287,7 @@ html {
 }
 
 .ticket-list {    
-    margin-top: 32px; 
+    margin-top: 16px; 
 }
 
 .ticket-card .ticket-img {
@@ -484,5 +503,62 @@ html {
 
 /* Mobile */
 @media (max-width: 739px) {
+    .sm-full-width,
+    .col-sm-1 {
+        width: 100% !important;
+    } 
     
+    .sm-mt-8 {
+        margin-top: 8px !important;
+    }
+
+    #header {
+        overflow: hidden;
+    }  
+
+    #nav {
+        display: block;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #slider .img-text {
+        display: none;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    #contact .contact-input {
+        margin-top: 16px;
+    }
 }
+
