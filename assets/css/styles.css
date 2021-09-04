@@ -87,10 +87,6 @@ html {
 3. Từ tổng quan đến chi tiết
 */
 
-#main {
-
-}
-
 #header {
     height: 46px;
     background-color: #000;
@@ -193,8 +189,11 @@ html {
 #content .content-section {
     padding: 64px 0 112px;
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
@@ -481,4 +480,9 @@ html {
     to {
         transform: translateY(0);
     }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    
 }
