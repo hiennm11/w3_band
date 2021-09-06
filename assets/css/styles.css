@@ -27,6 +27,8 @@ html {
     text-align: center;
     display: inline-block;    
     border: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -184,8 +186,9 @@ html {
 
 #slider {
     /* padding-top: 50%; */
-    margin-top: 46px;
     /* background: url('https://www.w3schools.com/w3images/la.jpg') top center / cover no-repeat; */
+    /* background: url('../img/slider1.jpg') top center / cover no-repeat; */
+    margin-top: 46px;
     position: relative;
 }
 
@@ -203,6 +206,7 @@ html {
 
 #slider .img-text > p {
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 
 #content .content-section {
@@ -302,7 +306,7 @@ html {
 .ticket-card .ticket-content {
     background-color: #fff;
     padding: 16px;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .ticket-content .ticket-place {
@@ -344,6 +348,15 @@ html {
 .contact-info i[class*="ti-"] {
     width: 30px;
     display: inline-block;
+}
+
+.contact-info a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-input {
@@ -501,8 +514,49 @@ html {
     }
 }
 
+@media (min-width: 46.25em) and (max-width: 64em) {
+    
+}
+
+/* Mobile + Tablet */
+@media (max-width: 63.9375em) {
+    #nav .subnav a {
+        padding: 5px 12px;
+    }
+
+    .btn {
+        padding: 15px 16px;
+    }
+
+    .contact-info {
+        line-height: 2;
+    }
+
+    .contact-input .form-control {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .contact-send-btn {
+        font-size: 18px;
+    }
+
+    #footer .social {
+        font-size: 42px;
+    }
+
+    #footer .social a {
+        margin: 0 8px;
+    }
+
+    #footer .copyright a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+
 /* Mobile */
-@media (max-width: 739px) {
+@media (max-width: 46.1875em) {
     .sm-full-width,
     .col-sm-1 {
         width: 100% !important;
@@ -558,7 +612,7 @@ html {
     }
 
     #contact .contact-input {
-        margin-top: 16px;
+        margin-top: 32px;
     }
 }
 
